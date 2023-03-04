@@ -1,5 +1,5 @@
 header {
-    height: 100vh;
+    height: 120vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -39,11 +39,11 @@ header {
 }
 
 /* ================== NAME AND NICKNAME ================*/
-#first{
+#first {
     font-size: 3rem;
 }
 
-#second{
+#second {
     font-size: 1.8rem;
 }
 
@@ -51,14 +51,14 @@ header {
 .me {
     background: linear-gradient(var(--color-primary), transparent);
     width: 20rem;
-    height: 30rem;
+    /* height: 30rem; */
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
     margin-top: 4rem;
-    border-radius: 12rem 12rem 0 0;
+    border-radius: 1rem 1rem 1rem 1rem;
     overflow: hidden;
-    padding: 5rem 3rem 3rem 3rem;
+    /* padding: 5rem 3rem 3rem 3rem; */
 }
 
 /* ================== SCROLL DOWN ================*/
@@ -86,15 +86,16 @@ header {
         height: 100vh;
     }
 
-    .header__socials, .scroll__down {
+    .header__socials,
+    .scroll__down {
         display: none;
     }
 
-    #first{
+    #first {
         font-size: 2rem;
     }
-    
-    #second{
+
+    #second {
         font-size: 1.3rem;
     }
 }

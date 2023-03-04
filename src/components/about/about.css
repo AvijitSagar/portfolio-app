@@ -85,7 +85,7 @@
 /* ================ MEDIA QURIES (SMALL DEVICES)  ==================*/
 @media screen and (max-width: 600px) {
     .about__me {
-        width: 65%;
+        width: 45%;
         margin: 0 auto 3rem;
     }
 

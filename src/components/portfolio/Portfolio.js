@@ -5,7 +5,8 @@ import IMG2 from '../../assets/portfolio2.png'
 import IMG3 from '../../assets/portfolio3.png'
 import IMG4 from '../../assets/portfolio4.png'
 import IMG5 from '../../assets/portfolio5.png'
-import IMG6 from '../../assets/portfolio6.jpg'
+import IMG6 from '../../assets/portfolio6.png'
+import IMG7 from '../../assets/portfolio7.jpg'
 
 // DO NOT USE THE IMAGES IN PRODUCTION
 
@@ -23,42 +24,51 @@ const data = [
   {
     id: 2,
     image: IMG2,
+    title: 'Fully Functional online store with admin panel using raw PHP. Go to /admin and put "admin" as username and password',
+    github: 'https://github.com/saggarr-work/HandCraft',
+    demo: 'http://beta.saggarr.com/'
+  },
+
+  {
+    id: 3,
+    image: IMG3,
     title: 'Fully Functional Text Utility App With Javascript',
     github: 'https://github.com/saggarr-work/text-utility-toast',
     demo: 'https://saggarr-work.github.io/text-utility-toast/'
   },
 
   {
-    id: 3,
-    image: IMG3,
+    id: 4,
+    image: IMG4,
     title: 'Admin Dashboard & Financial Visualization',
     github: 'https://github.com/saggarr-work/admin_dashboard',
     demo: 'https://saggarr-work.github.io/admin_dashboard/'
   },
 
   {
-    id: 4,
-    image: IMG4,
+    id: 5,
+    image: IMG5,
     title: 'Simple Online Note app / CRUD operqtions using PHP',
     github: 'https://github.com/saggarr-work/CRUD',
-    demo: 'http://saggarr.rf.gd/'
+    demo: 'http://test.saggarr.com/'
   },
 
   {
-    id: 5,
-    image: IMG5,
+    id: 6,
+    image: IMG6,
     title: 'Simple Calculator With HTML CSS & JavaScript',
     github: 'https://github.com/saggarr-work/calculator_with_eval_function',
     demo: 'https://saggarr-work.github.io/calculator_with_eval_function/'
   },
 
   {
-    id: 6,
-    image: IMG6,
+    id: 7,
+    image: IMG7,
     title: 'Simple Clock With HTML CSS & JavaScript',
     github: 'https://github.com/saggarr-work/watch',
     demo: 'https://saggarr-work.github.io/watch/'
-  }
+  },
+
 ]
 
 function Portfolio() {
@@ -69,9 +79,9 @@ function Portfolio() {
 
       <div className='container portfolio__container'>
         {
-          data.map(({id, image, title, github, demo}) => {
+          data.map(({ id, image, title, github, demo }) => {
             return (
-              <article key= {id} className='portfolio__item'>
+              <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
                   <img src={image} alt={title}></img>
                 </div>
