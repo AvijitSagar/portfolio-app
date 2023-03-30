@@ -21,7 +21,7 @@ function Footer() {
       <div className='footer__socials'>
         <a href='' target="blank"><FaFacebookF/></a>
         <a href='' target="blank"><FaInstagram/></a>
-        <a href='https://t.me/sagarbiswas93' target="blank"><FaTelegramPlane/></a>
+        <a href='' target="blank"><FaTelegramPlane/></a>
       </div>
 
       {/* autometic copyright date genarator */}
